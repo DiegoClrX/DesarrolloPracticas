@@ -1,0 +1,1 @@
+Ajustar el navegador al 75% esta hecho con un monitor grande y puede que en el pequeño no se vea bien

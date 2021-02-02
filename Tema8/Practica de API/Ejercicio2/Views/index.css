@@ -1,0 +1,67 @@
+body {
+    background: linear-gradient(135deg, #292929 0%,#2c2c2c 50%,#232323 50%,#232323 50%);
+    background-attachment: fixed;
+    font-family: Roboto, sans-serif;
+  }
+  
+  /* o bloco principal, o menu propriamente dito */
+  nav {
+    background: #FCCC51;
+    width: 200px;
+    text-align: center;
+    transform: translateX(-200px);
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  /* itens do menu */
+  #menu li {
+    list-style: none;
+    text-decoration: none;
+    color: #222222;
+    font-size: 20px;
+    padding: 30px 0;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  #menu li:hover {
+    background: #F3B23C;
+  }
+
+  #menu li a{
+      color: black;
+      text-decoration: none;
+}
+  
+  /* checkbox */
+  #menu-box {
+    display: none;
+  }
+  
+  /* label */
+  .btn-menu {
+    color: #222222;
+    background: #FCCC51;
+    padding: 10px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    width: 27px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  /* aqui definimos o que acontece ao botão quando a checkbox estiver marcada */
+  #menu-box:checked ~ .btn-menu {
+    background: #F3B23C;
+    transform: translateX(200px);
+  }
+  
+  /* aqui definimos o que acontece ao menu quando a checkbox estiver marcada */
+  #menu-box:checked ~ nav {
+    transform: translateX(0);
+  }
